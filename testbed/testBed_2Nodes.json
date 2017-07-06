@@ -1,0 +1,46 @@
+{
+    "Device": {
+        "DUT1": {
+            "hostname"  : "DUT1",
+	    "username"  : "",
+	    "password"  : "",
+	    "mgmtIP"    : "172.17.0.3",
+            "console"   : "",
+            "platform"  : "",
+            "ASIC"      : "",
+            "processor" : "",
+            "ports"   : {
+                         "DUT1_P1" : "fpPort11",
+			 "DUT1_P2" : "fpPort12"
+                         }
+        	}, 
+        "DUT2": {
+            "hostname"  : "DUT2",
+	    "username"  : "",
+	    "password"  : "",
+            "platform"  : "",
+	    "mgmtIP"    : "172.17.0.2",
+            "console"   : "",
+            "platform"  : "",
+            "ASIC"      : "",
+            "processor" : "",
+            "ports"   : {
+                         "DUT2_P1" : "fpPort21",
+                         "DUT2_P2" : "fpPort22"
+			}
+        	}
+              },
+	 
+     "Links": {
+        
+	"DUT1_DUT2_1": {
+			"DUT1":{"Intf":"DUT1_P1", "speed":"40G"},
+			"DUT2":{"Intf":"DUT2_P1", "speed":"40G"}
+        		},
+	"DUT1_DUT2_2": {
+			"DUT1":{"Intf":"DUT1_P2", "speed":"40G"},
+			"DUT2":{"Intf":"DUT2_P2", "speed":"40G"}
+        		}
+
+               }
+}

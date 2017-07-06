@@ -1,0 +1,32 @@
+{
+   "TestBedMap":{
+      "BGP_TestSuite":[
+         "accton_trident2_testbed",
+         "wedge_brdcm_trident2_testbed",
+         "as4610_helix4_testbed",
+         "voyager_tomhwk2_testbed"
+      ],
+      "OSPF_TestSuite":[
+         "accton_trident2_testbed",
+         "wedge_brdcm_trident2_testbed"
+      ],
+      "Interface_TestSuite":[
+         "voyager_tomhwk2_testbed"
+      ],
+      "STP_TestSuite":[
+         "wedge_brdcm_trident2_testbed"
+      ]
+   },
+   "Status":{
+      "accton_trident2_testbed":"Reserved",
+      "wedge_brdcm_trident2_testbed":"Available",
+      "as4610_helix4_testbed":"Available",
+      "voyager_tomhwk2_testbed":"Available"
+   },
+   "SuiteExecutionTime":{
+      "BGP_TestSuite":5,
+      "OSPF_TestSuite":3,
+      "STP_TestSuite":2,
+      "Interface_TestSuite":2
+   }
+}

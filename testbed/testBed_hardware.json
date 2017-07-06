@@ -1,0 +1,82 @@
+{
+    "Device": {
+        "DUT1": {
+            "hostname"  : "DUT1",
+	    "username"  : "admin",
+	    "password"  : "root123",
+	    "mgmtIP"    : "172.17.0.2",
+            "console"   : "192.100.0.20 -p 3021",
+            "platform"  : "Accton",
+            "ASIC"      : "Broadcom",
+            "processor" : "x86",
+            "ports"   : {
+                         "DUT1_P1" : "fpPort1",
+			 "DUT1_P2" : "fpPort2",
+                         "DUT1_P3" : "fpPort1000"
+	                }
+        	}, 
+        "DUT2": {
+            "hostname"  : "DUT2",
+	    "username"  : "admin",
+	    "password"  : "root123",
+	    "mgmtIP"    : "172.17.0.3",
+            "console"   : "192.100.0.20 -p 3022",
+            "platform"  : "Accton",
+            "ASIC"      : "Broadcom",
+            "processor" : "x86",
+            "ports"   : {
+                         "DUT2_P1" : "fpPort3", 
+                         "DUT2_P2": "fpPort7"
+			}
+        	},
+	 "DUT3": {
+            "hostname"  : "DUT2",
+	    "username"  : "admin",
+	    "password"  : "root123",
+	    "mgmtIP"    : "172.17.0.4",
+            "console"   : "192.100.0.20 -p 3023",
+            "platform"  : "Celestica",
+            "ASIC"      : "Broadcom",
+            "processor" : "x86",
+            "ports"   : {
+                         "DUT3_P1" : "fpPort4", 
+                         "DUT3_P2": "fpPort8"
+                         }
+        	},
+	"DUT4": {
+            "hostname"  : "DUT2",
+	    "username"  : "admin",
+	    "password"  : "root123",
+	    "mgmtIP"    : "172.17.0.5",
+            "console"   : "192.100.0.20 -p 3024",
+            "platform"  : "Celestica",
+            "ASIC"      : "Broadcom",
+            "processor" : "ARM",
+            "ports"   : {
+                         "DUT4_P1" : "fpPort5",
+			 "DUT4_P2" : "fpPort6"
+                         }
+        	}
+              },
+	 
+     "Links": {
+        
+	"DUT1_DUT2_1": {
+			"DUT1":{"Intf":"DUT1_P1", "speed":"40G"},
+			"DUT2":{"Intf":"DUT2_P1", "speed":"40G"}
+        		},
+	"DUT3_DUT4_1": {
+			"DUT3":{"Intf":"DUT3_P1", "speed":"40G"},
+			"DUT4":{"Intf":"DUT4_P1", "speed":"40G"}
+        		},
+	"DUT1_DUT4_1": {
+			"DUT1":{"Intf":"DUT1_P2", "speed":"40G"},
+			"DUT4":{"Intf":"DUT4_P2", "speed":"40G"}
+        		}, 
+        "DUT3_DUT4_1": {
+                       "DUT3": {"Intf": "DUT3_P1", "speed": "40G"}, 
+                       "DUT4": {"Intf": "DUT4_P1", "speed": "40G"}
+        }
+
+               }
+}
